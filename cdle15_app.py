@@ -38,7 +38,7 @@ st.title("ChatGPT アプリ")
 st.image("cdle15_app_photo.png")
 st.write(" ◤◢◤◢　個人情報や機密情報は入力しないでください　◤◢◤◢  ")
 
-user_input = st.text_input("▼プロンプトを入力してください。", key="user_input", on_change=communicate)
+user_input = st.text_input("▼ プロンプトを入力してください。", key="user_input", on_change=communicate)
 
 if st.session_state["messages"]:
     messages = st.session_state["messages"]
