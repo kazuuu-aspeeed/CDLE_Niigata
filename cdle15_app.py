@@ -3,7 +3,7 @@ import streamlit as st
 import openai
 import secret_keys  # 外部ファイルにAPI keyを格納
 
-openai.api_key = secret_keys.openai_api_key
+openai.api_key = st.secrets.OpenAIAPI.openai_api_key
 
 # st.session_stateを使いメッセージのやりとりを保存
 if "messages" not in st.session_state:
